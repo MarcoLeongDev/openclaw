@@ -48,15 +48,10 @@ type SettingsHost = {
   sessionKey: string;
   tab: Tab;
   connected: boolean;
-  chatSelectedAgentId?: string | null;
-  chatHasAutoScrolled: boolean;
-  logsAtBottom: boolean;
-  eventLog: unknown[];
-  eventLogBuffer: unknown[];
-  basePath: string;
   agentsList?: AgentsListResult | null;
   agentsSelectedId?: string | null;
   chatSelectedAgentId?: string | null;
+  agentsPanel?: "overview" | "files" | "tools" | "skills" | "channels" | "cron";
   agentsPanel?: "overview" | "files" | "tools" | "skills" | "channels" | "cron";
   themeMedia: MediaQueryList | null;
   themeMediaHandler: ((event: MediaQueryListEvent) => void) | null;
